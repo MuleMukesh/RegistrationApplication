@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<welcome-file-list>
+		<welcome-file>Login.html</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>query</servlet-name>
+		<servlet-class>com.task.Select</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>query</servlet-name>
+		<url-pattern>/select</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>insert</servlet-name>
+		<servlet-class>com.task.Insert</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>insert</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>update</servlet-name>
+		<servlet-class>com.task.Update</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>update</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>delete</servlet-name>
+		<servlet-class>com.task.Delete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>delete</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+</web-app>
